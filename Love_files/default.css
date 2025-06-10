@@ -90,47 +90,23 @@ a {
 	width: 40px;
 }
 
-@media screen and (max-width: 768px) {
-	#text {
-		left: 5%;
-		top: 60px;
-		width: 90%;
-	}
+@media screen and (max-width: 600px) {
+    #text, #clock-box {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+    }
 
-	#clock-box {
-		left: 5%;
-		top: calc(100% - 60px);
-		font-size: 1.2rem;
-		text-align: left;
-	}
+    #code {
+        font-size: 1rem;
+    }
 
-	#code {
-		font-size: 1.2rem;
-	}
+    #clock-box {
+        font-size: 1.2rem;
+    }
 
-	#clock .digit {
-		font-size: 1.6rem;
-	}
-
-	.space {
-		width: 20px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	body {
-		font-size: 16px;
-	}
-
-	#code {
-		font-size: 1rem;
-	}
-
-	#clock-box a {
-		font-size: 1rem;
-	}
-
-	#clock .digit {
-		font-size: 1.4rem;
-	}
+    #canvas {
+        display: none; /* opcional si no se necesita */
+    }
 }
