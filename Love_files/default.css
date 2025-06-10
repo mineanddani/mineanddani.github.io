@@ -27,11 +27,13 @@ a {
 
 #text {
 	width: 90%;
-	max-width: 400px;
-	height: auto;
-	left: 5%;
-	top: 80px;
-	position: absolute;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        z-index: 1;
 }
 
 #code {
@@ -40,11 +42,15 @@ a {
 }
 
 #clock-box {
-	position: absolute;
-	left: 5%;
-	top: 85%;
-	font-size: 1.4rem;
-	display: none;
+	width: 90%;
+        max-width: 400px;
+        margin: 30px auto 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 1.4rem;
+        display: none;
+        z-index: 1;
 }
 
 #clock-box a {
@@ -91,13 +97,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    #text, #clock-box {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
-        text-align: left;
-    }
-
     #code {
         font-size: 1rem;
     }
@@ -107,6 +106,6 @@ a {
     }
 
     #canvas {
-        display: none; /* opcional si no se necesita */
+        display: none; /* si no se necesita en móvil */
     }
 }
