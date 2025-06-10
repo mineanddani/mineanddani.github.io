@@ -19,35 +19,36 @@ a {
 
 #wrap {
 	position: relative;
-	margin: 0 auto;
-	width: 1100px;
-	height: 680px;
-	margin-top: 100px;
+	margin: 100px auto 0 auto;
+	width: 90%;
+	height: auto;
+	max-width: 1100px;
 }
 
 #text {
-	width: 400px;
-	height: 425px;
-	left: 60px;
+	width: 90%;
+	max-width: 400px;
+	height: auto;
+	left: 5%;
 	top: 80px;
 	position: absolute;
 }
 
 #code {
 	display: none;
-	font-size: 28px;
+	font-size: 1.4rem;
 }
 
 #clock-box {
 	position: absolute;
-	left: 60px;
-	top: 590px;
-	font-size: 28px;
+	left: 5%;
+	top: 85%;
+	font-size: 1.4rem;
 	display: none;
 }
 
 #clock-box a {
-	font-size: 28px;
+	font-size: 1.4rem;
 	text-decoration: none;
 }
 
@@ -56,19 +57,20 @@ a {
 }
 
 #clock .digit {
-	font-size: 40px;
+	font-size: 2rem;
 }
 
 #canvas {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 1100px;
 	margin: 0 auto;
-	width: 1100px;
-	height: 680px;
 }
 
 #error {
-	margin: 0 auto;
+	margin: 60px auto 0 auto;
 	text-align: center;
-	margin-top: 60px;
 	display: none;
 }
 
@@ -77,9 +79,58 @@ a {
 }
 
 .say {
+	display: block;
 	margin-left: 5px;
+	margin-bottom: 8px;
+	word-wrap: break-word;
 }
 
 .space {
-	margin-right: 150px;
+	display: inline-block;
+	width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	#text {
+		left: 5%;
+		top: 60px;
+		width: 90%;
+	}
+
+	#clock-box {
+		left: 5%;
+		top: calc(100% - 60px);
+		font-size: 1.2rem;
+		text-align: left;
+	}
+
+	#code {
+		font-size: 1.2rem;
+	}
+
+	#clock .digit {
+		font-size: 1.6rem;
+	}
+
+	.space {
+		width: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 16px;
+	}
+
+	#code {
+		font-size: 1rem;
+	}
+
+	#clock-box a {
+		font-size: 1rem;
+	}
+
+	#clock .digit {
+		font-size: 1.4rem;
+	}
 }
