@@ -1,114 +1,85 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #F5E8DC;
-    font-size: 20px;
-    font-family: '微软雅黑', '宋体', sans-serif;
-    color: #5C4033;
-    overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	background: #F5E8DC;
+	font-size: 20px;
+	font-family: '微软雅黑', '宋体', sans-serif;
+	color: #5C4033;
+	overflow: auto
 }
 
 a {
-    color: #5C4033;
-    font-size: 14px;
+	color: #5C4033;
+	font-size: 14px;
 }
 
 #main {
-    width: 100%;
+	width: 100%;
 }
 
 #wrap {
-    position: relative;
-    width: 100%;
-    max-width: 1100px;
-    margin: 100px auto 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+	height: 680px;
+	margin-top: 100px;
 }
 
 #text {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 40px auto;
-    position: relative;
-    z-index: 2;
+	width: 400px;
+	height: 425px;
+	left: 60px;
+	top: 80px;
+	position: absolute;
 }
 
 #code {
-    display: block;
-    font-size: 1.4rem;
-    line-height: 1.6;
+	display: none;
+	font-size: 28px;
 }
 
 #clock-box {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 40px auto;
-    position: relative;
-    font-size: 1.4rem;
-    z-index: 2;
+	position: absolute;
+	left: 60px;
+	top: 590px;
+	font-size: 28px;
+	display: none;
 }
 
 #clock-box a {
-    font-size: 1.4rem;
-    text-decoration: none;
+	font-size: 28px;
+	text-decoration: none;
 }
 
 #clock {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 
 #clock .digit {
-    font-size: 2rem;
+	font-size: 40px;
 }
 
 #canvas {
-    display: block;
-    width: 100%;
-    max-width: 1100px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+	margin: 0 auto;
+	width: 1100px;
+	height: 680px;
 }
 
 #error {
-    margin: 60px auto 0 auto;
-    text-align: center;
-    display: none;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 60px;
+	display: none;
 }
 
 .hand {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .say {
-    display: block;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    word-wrap: break-word;
+	margin-left: 5px;
 }
 
 .space {
-    display: inline-block;
-    width: 40px;
-}
-
-/* Responsivo para pantallas pequeñas */
-@media screen and (max-width: 600px) {
-    #wrap {
-        margin-top: 40px;
-    }
-
-    #code {
-        font-size: 1rem;
-    }
-
-    #clock-box {
-        font-size: 1.2rem;
-    }
-
-    #canvas {
-        display: none;
-    }
+	margin-right: 150px;
 }
